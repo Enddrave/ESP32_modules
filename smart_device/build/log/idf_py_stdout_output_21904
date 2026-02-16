@@ -1,0 +1,2979 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 2 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 3 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 4 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 5 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 6 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 7 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 8 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 9 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 10 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 11 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 12 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 13 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 14 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 15 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+[0;32mI (10392) smart_device: Device running...[0m
+[0;32mI (15392) smart_device: Device running...[0m
+[0;32mI (20392) smart_device: Device running...[0m
+[0;32mI (25392) smart_device: Device running...[0m
+[0;32mI (30392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 16 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 17 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 18 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 19 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 20 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 21 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (392) smart_device: Device booted 22 times[0m
+[0;32mI (392) smart_device: Current mode: 0[0m
+[0;32mI (392) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (392) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 23 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 24 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 25 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 26 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 27 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 28 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+[0;32mI (10392) smart_device: Device running...[0m
+[0;32mI (15392) smart_device: Device running...[0m
+[0;32mI (20392) smart_device: Device running...[0m
+[0;32mI (25392) smart_device: Device running...[0m
+[0;32mI (30392) smart_device: Device running...[0m
+[0;32mI (35392) smart_device: Device running...[0m
+[0;32mI (40392) smart_device: Device running...[0m
+[0;32mI (45392) smart_device: Device running...[0m
+[0;32mI (50392) smart_device: Device running...[0m
+[0;32mI (55392) smart_device: Device running...[0m
+[0;32mI (60392) smart_device: Device running...[0m
+[0;32mI (65392) smart_device: Device running...[0m
+[0;32mI (70392) smart_device: Device running...[0m
+[0;32mI (75392) smart_device: Device running...[0m
+[0;32mI (80392) smart_device: Device running...[0m
+[0;32mI (85392) smart_device: Device running...[0m
+[0;32mI (90392) smart_device: Device running...[0m
+[0;32mI (95392) smart_device: Device running...[0m
+[0;32mI (100392) smart_device: Device running...[0m
+[0;32mI (105392) smart_device: Device running...[0m
+[0;32mI (110392) smart_device: Device running...[0m
+[0;32mI (115392) smart_device: Device running...[0m
+[0;32mI (120392) smart_device: Device running...[0m
+[0;32mI (125392) smart_device: Device running...[0m
+[0;32mI (130392) smart_device: Device running...[0m
+[0;32mI (135392) smart_device: Device running...[0m
+[0;32mI (140392) smart_device: Device running...[0m
+[0;32mI (145392) smart_device: Device running...[0m
+[0;32mI (150392) smart_device: Device running...[0m
+[0;32mI (155392) smart_device: Device running...[0m
+[0;32mI (160392) smart_device: Device running...[0m
+[0;32mI (165392) smart_device: Device running...[0m
+[0;32mI (170392) smart_device: Device running...[0m
+[0;32mI (175392) smart_device: Device running...[0m
+[0;32mI (180392) smart_device: Device running...[0m
+[0;32mI (185392) smart_device: Device running...[0m
+[0;32mI (190392) smart_device: Device running...[0m
+[0;32mI (195392) smart_device: Device running...[0m
+[0;32mI (200392) smart_device: Device running...[0m
+[0;32mI (205392) smart_device: Device running...[0m
+[0;32mI (210392) smart_device: Device running...[0m
+[0;32mI (215392) smart_device: Device running...[0m
+[0;32mI (220392) smart_device: Device running...[0m
+[0;32mI (225392) smart_device: Device running...[0m
+[0;32mI (230392) smart_device: Device running...[0m
+[0;32mI (235392) smart_device: Device running...[0m
+[0;32mI (240392) smart_device: Device running...[0m
+[0;32mI (245392) smart_device: Device running...[0m
+[0;32mI (250392) smart_device: Device running...[0m
+[0;32mI (255392) smart_device: Device running...[0m
+[0;32mI (260392) smart_device: Device running...[0m
+[0;32mI (265392) smart_device: Device running...[0m
+[0;32mI (270392) smart_device: Device running...[0m
+[0;32mI (275392) smart_device: Device running...[0m
+[0;32mI (280392) smart_device: Device running...[0m
+[0;32mI (285392) smart_device: Device running...[0m
+[0;32mI (290392) smart_device: Device running...[0m
+[0;32mI (295392) smart_device: Device running...[0m
+[0;32mI (300392) smart_device: Device running...[0m
+[0;32mI (305392) smart_device: Device running...[0m
+[0;32mI (310392) smart_device: Device running...[0m
+[0;32mI (315392) smart_device: Device running...[0m
+[0;32mI (320392) smart_device: Device running...[0m
+[0;32mI (325392) smart_device: Device running...[0m
+[0;32mI (330392) smart_device: Device running...[0m
+[0;32mI (335392) smart_device: Device running...[0m
+[0;32mI (340392) smart_device: Device running...[0m
+[0;32mI (345392) smart_device: Device running...[0m
+[0;32mI (350392) smart_device: Device running...[0m
+[0;32mI (355392) smart_device: Device running...[0m
+[0;32mI (360392) smart_device: Device running...[0m
+[0;32mI (365392) smart_device: Device running...[0m
+[0;32mI (370392) smart_device: Device running...[0m
+[0;32mI (375392) smart_device: Device running...[0m
+[0;32mI (380392) smart_device: Device running...[0m
+[0;32mI (385392) smart_device: Device running...[0m
+[0;32mI (390392) smart_device: Device running...[0m
+[0;32mI (395392) smart_device: Device running...[0m
+[0;32mI (400392) smart_device: Device running...[0m
+[0;32mI (405392) smart_device: Device running...[0m
+[0;32mI (410392) smart_device: Device running...[0m
+[0;32mI (415392) smart_device: Device running...[0m
+[0;32mI (420392) smart_device: Device running...[0m
+[0;32mI (425392) smart_device: Device running...[0m
+[0;32mI (430392) smart_device: Device running...[0m
+[0;32mI (435392) smart_device: Device running...[0m
+[0;32mI (440392) smart_device: Device running...[0m
+[0;32mI (445392) smart_device: Device running...[0m
+[0;32mI (450392) smart_device: Device running...[0m
+[0;32mI (455392) smart_device: Device running...[0m
+[0;32mI (460392) smart_device: Device running...[0m
+[0;32mI (465392) smart_device: Device running...[0m
+[0;32mI (470392) smart_device: Device running...[0m
+[0;32mI (475392) smart_device: Device running...[0m
+[0;32mI (480392) smart_device: Device running...[0m
+[0;32mI (485392) smart_device: Device running...[0m
+[0;32mI (490392) smart_device: Device running...[0m
+[0;32mI (495392) smart_device: Device running...[0m
+[0;32mI (500392) smart_device: Device running...[0m
+[0;32mI (505392) smart_device: Device running...[0m
+[0;32mI (510392) smart_device: Device running...[0m
+[0;32mI (515392) smart_device: Device running...[0m
+[0;32mI (520392) smart_device: Device running...[0m
+[0;32mI (525392) smart_device: Device running...[0m
+[0;32mI (530392) smart_device: Device running...[0m
+[0;32mI (535392) smart_device: Device running...[0m
+[0;32mI (540392) smart_device: Device running...[0m
+[0;32mI (545392) smart_device: Device running...[0m
+[0;32mI (550392) smart_device: Device running...[0m
+[0;32mI (555392) smart_device: Device running...[0m
+[0;32mI (560392) smart_device: Device running...[0m
+[0;32mI (565392) smart_device: Device running...[0m
+[0;32mI (570392) smart_device: Device running...[0m
+[0;32mI (575392) smart_device: Device running...[0m
+[0;32mI (580392) smart_device: Device running...[0m
+[0;32mI (585392) smart_device: Device running...[0m
+[0;32mI (590392) smart_device: Device running...[0m
+[0;32mI (595392) smart_device: Device running...[0m
+[0;32mI (600392) smart_device: Device running...[0m
+[0;32mI (605392) smart_device: Device running...[0m
+[0;32mI (610392) smart_device: Device running...[0m
+[0;32mI (615392) smart_device: Device running...[0m
+[0;32mI (620392) smart_device: Device running...[0m
+[0;32mI (625392) smart_device: Device running...[0m
+[0;32mI (630392) smart_device: Device running...[0m
+[0;32mI (635392) smart_device: Device running...[0m
+[0;32mI (640392) smart_device: Device running...[0m
+[0;32mI (645392) smart_device: Device running...[0m
+[0;32mI (650392) smart_device: Device running...[0m
+[0;32mI (655392) smart_device: Device running...[0m
+[0;32mI (660392) smart_device: Device running...[0m
+[0;32mI (665392) smart_device: Device running...[0m
+[0;32mI (670392) smart_device: Device running...[0m
+[0;32mI (675392) smart_device: Device running...[0m
+[0;32mI (680392) smart_device: Device running...[0m
+[0;32mI (685392) smart_device: Device running...[0m
+[0;32mI (690392) smart_device: Device running...[0m
+[0;32mI (695392) smart_device: Device running...[0m
+[0;32mI (700392) smart_device: Device running...[0m
+[0;32mI (705392) smart_device: Device running...[0m
+[0;32mI (710392) smart_device: Device running...[0m
+[0;32mI (715392) smart_device: Device running...[0m
+[0;32mI (720392) smart_device: Device running...[0m
+[0;32mI (725392) smart_device: Device running...[0m
+[0;32mI (730392) smart_device: Device running...[0m
+[0;32mI (735392) smart_device: Device running...[0m
+[0;32mI (740392) smart_device: Device running...[0m
+[0;32mI (745392) smart_device: Device running...[0m
+[0;32mI (750392) smart_device: Device running...[0m
+[0;32mI (755392) smart_device: Device running...[0m
+[0;32mI (760392) smart_device: Device running...[0m
+[0;32mI (765392) smart_device: Device running...[0m
+[0;32mI (770392) smart_device: Device running...[0m
+[0;32mI (775392) smart_device: Device running...[0m
+[0;32mI (780392) smart_device: Device running...[0m
+[0;32mI (785392) smart_device: Device running...[0m
+[0;32mI (790392) smart_device: Device running...[0m
+[0;32mI (795392) smart_device: Device running...[0m
+[0;32mI (800392) smart_device: Device running...[0m
+[0;32mI (805392) smart_device: Device running...[0m
+[0;32mI (810392) smart_device: Device running...[0m
+[0;32mI (815392) smart_device: Device running...[0m
+[0;32mI (820392) smart_device: Device running...[0m
+[0;32mI (825392) smart_device: Device running...[0m
+[0;32mI (830392) smart_device: Device running...[0m
+[0;32mI (835392) smart_device: Device running...[0m
+[0;32mI (840392) smart_device: Device running...[0m
+[0;32mI (845392) smart_device: Device running...[0m
+[0;32mI (850392) smart_device: Device running...[0m
+[0;32mI (855392) smart_device: Device running...[0m
+[0;32mI (860392) smart_device: Device running...[0m
+[0;32mI (865392) smart_device: Device running...[0m
+[0;32mI (870392) smart_device: Device running...[0m
+[0;32mI (875392) smart_device: Device running...[0m
+[0;32mI (880392) smart_device: Device running...[0m
+[0;32mI (885392) smart_device: Device running...[0m
+[0;32mI (890392) smart_device: Device running...[0m
+[0;32mI (895392) smart_device: Device running...[0m
+[0;32mI (900392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 29 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+[0;32mI (10392) smart_device: Device running...[0m
+[0;32mI (15392) smart_device: Device running...[0m
+[0;32mI (20392) smart_device: Device running...[0m
+[0;32mI (25392) smart_device: Device running...[0m
+[0;32mI (30392) smart_device: Device running...[0m
+[0;32mI (35392) smart_device: Device running...[0m
+[0;32mI (40392) smart_device: Device running...[0m
+[0;32mI (45392) smart_device: Device running...[0m
+[0;32mI (50392) smart_device: Device running...[0m
+[0;32mI (55392) smart_device: Device running...[0m
+[0;32mI (60392) smart_device: Device running...[0m
+[0;32mI (65392) smart_device: Device running...[0m
+[0;32mI (70392) smart_device: Device running...[0m
+[0;32mI (75392) smart_device: Device running...[0m
+[0;32mI (80392) smart_device: Device running...[0m
+[0;32mI (85392) smart_device: Device running...[0m
+[0;32mI (90392) smart_device: Device running...[0m
+[0;32mI (95392) smart_device: Device running...[0m
+[0;32mI (100392) smart_device: Device running...[0m
+[0;32mI (105392) smart_device: Device running...[0m
+[0;32mI (110392) smart_device: Device running...[0m
+[0;32mI (115392) smart_device: Device running...[0m
+[0;32mI (120392) smart_device: Device running...[0m
+[0;32mI (125392) smart_device: Device running...[0m
+[0;32mI (130392) smart_device: Device running...[0m
+[0;32mI (135392) smart_device: Device running...[0m
+[0;32mI (140392) smart_device: Device running...[0m
+[0;32mI (145392) smart_device: Device running...[0m
+[0;32mI (150392) smart_device: Device running...[0m
+[0;32mI (155392) smart_device: Device running...[0m
+[0;32mI (160392) smart_device: Device running...[0m
+[0;32mI (165392) smart_device: Device running...[0m
+[0;32mI (170392) smart_device: Device running...[0m
+[0;32mI (175392) smart_device: Device running...[0m
+[0;32mI (180392) smart_device: Device running...[0m
+[0;32mI (185392) smart_device: Device running...[0m
+[0;32mI (190392) smart_device: Device running...[0m
+[0;32mI (195392) smart_device: Device running...[0m
+[0;32mI (200392) smart_device: Device running...[0m
+[0;32mI (205392) smart_device: Device running...[0m
+[0;32mI (210392) smart_device: Device running...[0m
+[0;32mI (215392) smart_device: Device running...[0m
+[0;32mI (220392) smart_device: Device running...[0m
+[0;32mI (225392) smart_device: Device running...[0m
+[0;32mI (230392) smart_device: Device running...[0m
+[0;32mI (235392) smart_device: Device running...[0m
+[0;32mI (240392) smart_device: Device running...[0m
+[0;32mI (245392) smart_device: Device running...[0m
+[0;32mI (250392) smart_device: Device running...[0m
+[0;32mI (255392) smart_device: Device running...[0m
+[0;32mI (260392) smart_device: Device running...[0m
+[0;32mI (265392) smart_device: Device running...[0m
+[0;32mI (270392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 30 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 31 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 32 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 33 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 34 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 35 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 36 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+[0;32mI (10392) smart_device: Device running...[0m
+[0;32mI (15392) smart_device: Device running...[0m
+[0;32mI (20392) smart_device: Device running...[0m
+[0;32mI (25392) smart_device: Device running...[0m
+[0;32mI (30392) smart_device: Device running...[0m
+[0;32mI (35392) smart_device: Device running...[0m
+[0;32mI (40392) smart_device: Device running...[0m
+[0;32mI (45392) smart_device: Device running...[0m
+[0;32mI (50392) smart_device: Device running...[0m
+[0;32mI (55392) smart_device: Device running...[0m
+[0;32mI (60392) smart_device: Device running...[0m
+[0;32mI (65392) smart_device: Device running...[0m
+[0;32mI (70392) smart_device: Device running...[0m
+[0;32mI (75392) smart_device: Device running...[0m
+[0;32mI (80392) smart_device: Device running...[0m
+[0;32mI (85392) smart_device: Device running...[0m
+[0;32mI (90392) smart_device: Device running...[0m
+[0;32mI (95392) smart_device: Device running...[0m
+[0;32mI (100392) smart_device: Device running...[0m
+[0;32mI (105392) smart_device: Device running...[0m
+[0;32mI (110392) smart_device: Device running...[0m
+[0;32mI (115392) smart_device: Device running...[0m
+[0;32mI (120392) smart_device: Device running...[0m
+[0;32mI (125392) smart_device: Device running...[0m
+[0;32mI (130392) smart_device: Device running...[0m
+[0;32mI (135392) smart_device: Device running...[0m
+[0;32mI (140392) smart_device: Device running...[0m
+[0;32mI (145392) smart_device: Device running...[0m
+[0;32mI (150392) smart_device: Device running...[0m
+[0;32mI (155392) smart_device: Device running...[0m
+[0;32mI (160392) smart_device: Device running...[0m
+[0;32mI (165392) smart_device: Device running...[0m
+[0;32mI (170392) smart_device: Device running...[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15632
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.6 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 16 2026 23:05:02[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da68h ( 55912) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da90 vaddr=3ffb0000 size=023dch (  9180) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001fe74 vaddr=40080000 size=001a4h (   420) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1691ch ( 92444) map[0m
+[0;32mI (169) esp_image: segment 4: paddr=00036944 vaddr=400801a4 size=10938h ( 67896) load[0m
+[0;32mI (204) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (205) boot: Disabling RNG early entropy source...[0m
+[0;32mI (216) cpu_start: Multicore app[0m
+[0;32mI (217) quad_psram: This chip is ESP32-D0WD[0m
+[0;31mE (219) quad_psram: PSRAM ID read error: 0xffffffff, PSRAM chip not found or not supported[0m
+[0;31mE (223) esp_psram: PSRAM enabled but initialization failed. Bailing out.[0m
+[0;32mI (230) cpu_start: Failed to init external RAM; continuing without it.[0m
+[0;32mI (249) cpu_start: Pro cpu start user code[0m
+[0;32mI (249) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (249) cpu_start: Application information:[0m
+[0;32mI (254) cpu_start: Project name:     smart_device[0m
+[0;32mI (259) cpu_start: App version:      1[0m
+[0;32mI (264) cpu_start: Compile time:     Feb 16 2026 23:04:53[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  ddf6d5ecb...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.6[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (285) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (289) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 3FFB2D68 len 0002D298 (180 KiB): DRAM[0m
+[0;32mI (314) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (320) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (326) heap_init: At 40090ADC len 0000F524 (61 KiB): IRAM[0m
+[0;32mI (334) spi_flash: detected chip: generic[0m
+[0;32mI (337) spi_flash: flash io: dio[0m
+[0;32mI (342) main_task: Started on CPU0[0m
+[0;32mI (352) main_task: Calling app_main()[0m
+[0;32mI (372) storage: Storage initialized[0m
+[0;32mI (382) smart_device: Device booted 37 times[0m
+[0;32mI (382) smart_device: Current mode: 0[0m
+[0;32mI (382) smart_device: Last runtime: 0 seconds[0m
+[0;32mI (382) smart_device: Brightness: 100[0m
+[0;32mI (5392) smart_device: Device running...[0m
+[0;32mI (10392) smart_device: Device running...[0m
+[0;32mI (15392) smart_device: Device running...[0m
+[0;32mI (20392) smart_device: Device running...[0m
+[0;32mI (25392) smart_device: Device running...[0m
+[0;32mI (30392) smart_device: Device running...[0m
+[0;32mI (35392) smart_device: Device running...[0m
+[0;32mI (40392) smart_device: Device running...[0m
+[0;32mI (45392) smart_device: Device running...[0m
+[0;32mI (50392) smart_device: Device running...[0m
+[0;32mI (55392) smart_device: Device running...[0m
+[0;32mI (60392) smart_device: Device running...[0m
+[0;32mI (65392) smart_device: Device running...[0m
+[0;32mI (70392) smart_device: Device running...[0m
+[0;32mI (75392) smart_device: Device running...[0m
+[0;32mI (80392) smart_device: Device running...[0m
+[0;32mI (85392) smart_device: Device running...[0m
+[0;32mI (90392) smart_device: Device running...[0m
+[0;32mI (95392) smart_device: Device running...[0m
+[0;32mI (100392) smart_device: Device running...[0m
+[0;32mI (105392) smart_device: Device running...[0m
+[0;32mI (110392) smart_device: Device running...[0m
+[0;32mI (115392) smart_device: Device running...[0m
+[0;32mI (120392) smart_device: Device running...[0m
+[0;32mI (125392) smart_device: Device running...[0m
+[0;32mI (130392) smart_device: Device running...[0m
+[0;32mI (135392) smart_device: Device running...[0m
+[0;32mI (140392) smart_device: Device running...[0m
+[0;32mI (145392) smart_device: Device running...[0m
+[0;32mI (150392) smart_device: Device running...[0m
+[0;32mI (155392) smart_device: Device running...[0m
+[0;32mI (160392) smart_device: Device running...[0m
+[0;32mI (165392) smart_device: Device running...[0m
+[0;32mI (170392) smart_device: Device running...[0m
+[0;32mI (175392) smart_device: Device running...[0m
+[0;32mI (180392) smart_device: Device running...[0m
+[0;32mI (185392) smart_device: Device running...[0m
+[0;32mI (190392) smart_device: Device running...[0m
+[0;32mI (195392) smart_device: Device running...[0m
+[0;32mI (200392) smart_device: Device running...[0m
+[0;32mI (205392) smart_device: Device running...[0m
+[0;32mI (210392) smart_device: Device running...[0m
+[0;32mI (215392) smart_device: Device running...[0m
+[0;32mI (220392) smart_device: Device running...[0m
+[0;32mI (225392) smart_device: Device running...[0m
+[0;32mI (230392) smart_device: Device running...[0m
+[0;32mI (235392) smart_device: Device running...[0m
+[0;32mI (240392) smart_device: Device running...[0m
+[0;32mI (245392) smart_device: Device running...[0m
+[0;32mI (250392) smart_device: Device running...[0m
+[0;32mI (255392) smart_device: Device running...[0m
+[0;32mI (260392) smart_device: Device running...[0m
+[0;32mI (265392) smart_device: Device running...[0m
+[0;32mI (270392) smart_device: Device running...[0m
+[0;32mI (275392) smart_device: Device running...[0m
+[0;32mI (280392) smart_device: Device running...[0m
+[0;32mI (285392) smart_device: Device running...[0m
+[0;32mI (290392) smart_device: Device running...[0m
+[0;32mI (295392) smart_device: Device running...[0m
+[0;32mI (300392) smart_device: Device running...[0m
+[0;32mI (305392) smart_device: Device running...[0m
+[0;32mI (310392) smart_device: Device running...[0m
+[0;32mI (315392) smart_device: Device running...[0m
+[0;32mI (320392) smart_device: Device running...[0m
+[0;32mI (325392) smart_device: Device running...[0m
+[0;32mI (330392) smart_device: Device running...[0m
+[0;32mI (335392) smart_device: Device running...[0m
+[0;32mI (340392) smart_device: Device running...[0m
+[0;32mI (345392) smart_device: Device running...[0m
+[0;32mI (350392) smart_device: Device running...[0m
+[0;32mI (355392) smart_device: Device running...[0m
+[0;32mI (360392) smart_device: Device running...[0m
+[0;32mI (365392) smart_device: Device running...[0m
+[0;32mI (370392) smart_device: Device running...[0m
+[0;32mI (375392) smart_device: Device running...[0m
+[0;32mI (380392) smart_device: Device running...[0m
+[0;32mI (385392) smart_device: Device running...[0m
+[0;32mI (390392) smart_device: Device running...[0m
+[0;32mI (395392) smart_device: Device running...[0m
+[0;32mI (400392) smart_device: Device running...[0m
+[0;32mI (405392) smart_device: Device running...[0m
+[0;32mI (410392) smart_device: Device running...[0m
+[0;32mI (415392) smart_device: Device running...[0m
+[0;32mI (420392) smart_device: Device running...[0m
+[0;32mI (425392) smart_device: Device running...[0m
+[0;32mI (430392) smart_device: Device running...[0m
+[0;32mI (435392) smart_device: Device running...[0m
+[0;32mI (440392) smart_device: Device running...[0m
+[0;32mI (445392) smart_device: Device running...[0m
+[0;32mI (450392) smart_device: Device running...[0m
+[0;32mI (455392) smart_device: Device running...[0m
+[0;32mI (460392) smart_device: Device running...[0m
+[0;32mI (465392) smart_device: Device running...[0m
+[0;32mI (470392) smart_device: Device running...[0m
+[0;32mI (475392) smart_device: Device running...[0m
+[0;32mI (480392) smart_device: Device running...[0m
+[0;32mI (485392) smart_device: Device running...[0m
+[0;32mI (490392) smart_device: Device running...[0m
+[0;32mI (495392) smart_device: Device running...[0m
+[0;32mI (500392) smart_device: Device running...[0m
+[0;32mI (505392) smart_device: Device running...[0m
+[0;32mI (510392) smart_device: Device running...[0m
+[0;32mI (515392) smart_device: Device running...[0m
+[0;32mI (520392) smart_device: Device running...[0m
+[0;32mI (525392) smart_device: Device running...[0m
+[0;32mI (530392) smart_device: Device running...[0m
+[0;32mI (535392) smart_device: Device running...[0m
+[0;32mI (540392) smart_device: Device running...[0m
+[0;32mI (545392) smart_device: Device running...[0m
+[0;32mI (550392) smart_device: Device running...[0m
+[0;32mI (555392) smart_device: Device running...[0m
+[0;32mI (560392) smart_device: Device running...[0m
+[0;32mI (565392) smart_device: Device running...[0m
+[0;32mI (570392) smart_device: Device running...[0m
+[0;32mI (575392) smart_device: Device running...[0m
+[0;32mI (580392) smart_device: Device running...[0m
+[0;32mI (585392) smart_device: Device running...[0m
+[0;32mI (590392) smart_device: Device running...[0m
+[0;32mI (595392) smart_device: Device running...[0m
+[0;32mI (600392) smart_device: Device running...[0m
+[0;32mI (605392) smart_device: Device running...[0m
+[0;32mI (610392) smart_device: Device running...[0m
+[0;32mI (615392) smart_device: Device running...[0m
+[0;32mI (620392) smart_device: Device running...[0m
+[0;32mI (625392) smart_device: Device running...[0m
+[0;32mI (630392) smart_device: Device running...[0m
+[0;32mI (635392) smart_device: Device running...[0m
+[0;32mI (640392) smart_device: Device running...[0m
+[0;32mI (645392) smart_device: Device running...[0m
+[0;32mI (650392) smart_device: Device running...[0m
+[0;32mI (655392) smart_device: Device running...[0m
+[0;32mI (660392) smart_device: Device running...[0m
+[0;32mI (665392) smart_device: Device running...[0m
+[0;32mI (670392) smart_device: Device running...[0m
+[0;32mI (675392) smart_device: Device running...[0m
+[0;32mI (680392) smart_device: Device running...[0m
+[0;32mI (685392) smart_device: Device running...[0m
+[0;32mI (690392) smart_device: Device running...[0m
+[0;32mI (695392) smart_device: Device running...[0m
+[0;32mI (700392) smart_device: Device running...[0m
+[0;32mI (705392) smart_device: Device running...[0m
+[0;32mI (710392) smart_device: Device running...[0m
+[0;32mI (715392) smart_device: Device running...[0m
+[0;32mI (720392) smart_device: Device running...[0m
+[0;32mI (725392) smart_device: Device running...[0m
+[0;32mI (730392) smart_device: Device running...[0m
+[0;32mI (735392) smart_device: Device running...[0m
+[0;32mI (740392) smart_device: Device running...[0m
+[0;32mI (745392) smart_device: Device running...[0m
+[0;32mI (750392) smart_device: Device running...[0m
+[0;32mI (755392) smart_device: Device running...[0m
+[0;32mI (760392) smart_device: Device running...[0m
+[0;32mI (765392) smart_device: Device running...[0m
+[0;32mI (770392) smart_device: Device running...[0m
+[0;32mI (775392) smart_device: Device running...[0m
+[0;32mI (780392) smart_device: Device running...[0m
+[0;32mI (785392) smart_device: Device running...[0m
+[0;32mI (790392) smart_device: Device running...[0m
+[0;32mI (795392) smart_device: Device running...[0m
+[0;32mI (800392) smart_device: Device running...[0m
+[0;32mI (805392) smart_device: Device running...[0m
+[0;32mI (810392) smart_device: Device running...[0m
+[0;32mI (815392) smart_device: Device running...[0m
+[0;32mI (820392) smart_device: Device running...[0m
+[0;32mI (825392) smart_device: Device running...[0m
+[0;32mI (830392) smart_device: Device running...[0m
+[0;32mI (835392) smart_device: Device running...[0m
+[0;32mI (840392) smart_device: Device running...[0m
+[0;32mI (845392) smart_device: Device running...[0m
+[0;32mI (850392) smart_device: Device running...[0m
+[0;32mI (855392) smart_device: Device running...[0m
+[0;32mI (860392) smart_device: Device running...[0m
+[0;32mI (865392) smart_device: Device running...[0m
+[0;32mI (870392) smart_device: Device running...[0m
+[0;32mI (875392) smart_device: Device running...[0m
+[0;32mI (880392) smart_device: Device running...[0m
+[0;32mI (885392) smart_device: Device running...[0m
+[0;32mI (890392) smart_device: Device running...[0m
+[0;32mI (895392) smart_device: Device running...[0m
+[0;32mI (900392) smart_device: Device running...[0m
+[0;32mI (905392) smart_device: Device running...[0m
+[0;32mI (910392) smart_device: Device running...[0m
+[0;32mI (915392) smart_device: Device running...[0m
+[0;32mI (920392) smart_device: Device running...[0m
+[0;32mI (925392) smart_device: Device running...[0m
+[0;32mI (930392) smart_device: Device running...[0m
+[0;32mI (935392) smart_device: Device running...[0m
+[0;32mI (940392) smart_device: Device running...[0m
+[0;32mI (945392) smart_device: Device running...[0m
+[0;32mI (950392) smart_device: Device running...[0m
+[0;32mI (955392) smart_device: Device running...[0m
+[0;32mI (960392) smart_device: Device running...[0m
+[0;32mI (965392) smart_device: Device running...[0m
+[0;32mI (970392) smart_device: Device running...[0m
+[0;32mI (975392) smart_device: Device running...[0m
+[0;32mI (980392) smart_device: Device running...[0m
+[0;32mI (985392) smart_device: Device running...[0m
+[0;32mI (990392) smart_device: Device running...[0m
+[0;32mI (995392) smart_device: Device running...[0m
+[0;32mI (1000392) smart_device: Device running...[0m
+[0;32mI (1005392) smart_device: Device running...[0m
+[0;32mI (1010392) smart_device: Device running...[0m
+[0;32mI (1015392) smart_device: Device running...[0m
+[0;32mI (1020392) smart_device: Device running...[0m
+[0;32mI (1025392) smart_device: Device running...[0m
+[0;32mI (1030392) smart_device: Device running...[0m
+[0;32mI (1035392) smart_device: Device running...[0m
+[0;32mI (1040392) smart_device: Device running...[0m
+[0;32mI (1045392) smart_device: Device running...[0m
+[0;32mI (1050392) smart_device: Device running...[0m
+[0;32mI (1055392) smart_device: Device running...[0m
+[0;32mI (1060392) smart_device: Device running...[0m
+[0;32mI (1065392) smart_device: Device running...[0m
+[0;32mI (1070392) smart_device: Device running...[0m
+[0;32mI (1075392) smart_device: Device running...[0m
+[0;32mI (1080392) smart_device: Device running...[0m
+[0;32mI (1085392) smart_device: Device running...[0m
+[0;32mI (1090392) smart_device: Device running...[0m
+[0;32mI (1095392) smart_device: Device running...[0m
+[0;32mI (1100392) smart_device: Device running...[0m
+[0;32mI (1105392) smart_device: Device running...[0m
+[0;32mI (1110392) smart_device: Device running...[0m
+[0;32mI (1115392) smart_device: Device running...[0m
+[0;32mI (1120392) smart_device: Device running...[0m
+[0;32mI (1125392) smart_device: Device running...[0m
+[0;32mI (1130392) smart_device: Device running...[0m
+[0;32mI (1135392) smart_device: Device running...[0m
+[0;32mI (1140392) smart_device: Device running...[0m
+[0;32mI (1145392) smart_device: Device running...[0m
+[0;32mI (1150392) smart_device: Device running...[0m
+[0;32mI (1155392) smart_device: Device running...[0m
+[0;32mI (1160392) smart_device: Device running...[0m
+[0;32mI (1165392) smart_device: Device running...[0m
+[0;32mI (1170392) smart_device: Device running...[0m
+[0;32mI (1175392) smart_device: Device running...[0m
+[0;32mI (1180392) smart_device: Device running...[0m
+[0;32mI (1185392) smart_device: Device running...[0m
+[0;32mI (1190392) smart_device: Device running...[0m
+[0;32mI (1195392) smart_device: Device running...[0m
+[0;32mI (1200392) smart_device: Device running...[0m
+[0;32mI (1205392) smart_device: Device running...[0m
+[0;32mI (1210392) smart_device: Device running...[0m
+[0;32mI (1215392) smart_device: Device running...[0m
+[0;32mI (1220392) smart_device: Device running...[0m
+[0;32mI (1225392) smart_device: Device running...[0m
+[0;32mI (1230392) smart_device: Device running...[0m
+[0;32mI (1235392) smart_device: Device running...[0m
+[0;32mI (1240392) smart_device: Device running...[0m
+[0;32mI (1245392) smart_device: Device running...[0m
+[0;32mI (1250392) smart_device: Device running...[0m
+[0;32mI (1255392) smart_device: Device running...[0m
+[0;32mI (1260392) smart_device: Device running...[0m
+[0;32mI (1265392) smart_device: Device running...[0m
+[0;32mI (1270392) smart_device: Device running...[0m
+[0;32mI (1275392) smart_device: Device running...[0m
+[0;32mI (1280392) smart_device: Device running...[0m
+[0;32mI (1285392) smart_device: Device running...[0m
+[0;32mI (1290392) smart_device: Device running...[0m
+[0;32mI (1295392) smart_device: Device running...[0m
+[0;32mI (1300392) smart_device: Device running...[0m
+[0;32mI (1305392) smart_device: Device running...[0m
+[0;32mI (1310392) smart_device: Device running...[0m
+[0;32mI (1315392) smart_device: Device running...[0m
+[0;32mI (1320392) smart_device: Device running...[0m
+[0;32mI (1325392) smart_device: Device running...[0m
+[0;32mI (1330392) smart_device: Device running...[0m
+[0;32mI (1335392) smart_device: Device running...[0m
+[0;32mI (1340392) smart_device: Device running...[0m
+[0;32mI (1345392) smart_device: Device running...[0m
+[0;32mI (1350392) smart_device: Device running...[0m
+[0;32mI (1355392) smart_device: Device running...[0m
+[0;32mI (1360392) smart_device: Device running...[0m
+[0;32mI (1365392) smart_device: Device running...[0m
+[0;32mI (1370392) smart_device: Device running...[0m
+[0;32mI (1375392) smart_device: Device running...[0m
+[0;32mI (1380392) smart_device: Device running...[0m
+[0;32mI (1385392) smart_device: Device running...[0m
+[0;32mI (1390392) smart_device: Device running...[0m
+[0;32mI (1395392) smart_device: Device running...[0m
+[0;32mI (1400392) smart_device: Device

@@ -1,0 +1,2 @@
+source /Users/bhupendra/smart_device/build/bootloader/gdbinit/symbols
+source /Users/bhupendra/smart_device/build/bootloader/gdbinit/connect
