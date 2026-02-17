@@ -1,0 +1,2 @@
+source /Users/bhupendra/ESP32_Project_Git/day2_buildSystems/build/gdbinit/symbols
+source /Users/bhupendra/ESP32_Project_Git/day2_buildSystems/build/gdbinit/connect
