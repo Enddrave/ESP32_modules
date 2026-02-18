@@ -52,7 +52,13 @@ bool storage_save( device_config_t *cfg)
         nvs_set_blob(s_nvs, "cfg", cfg, sizeof(device_config_t));
         nvs_commit(s_nvs);
 
-        ESP_LOGI(TAG, "Ssved config (CRC=%lu)", cfg->crc);
+        ESP_LOGI(TAG, "Saved config (CRC=%lu)", cfg->crc);
+
+        device_config_t bad = *cfg;
+bad.crc ^= 0x55AA1234;   // flip bits
+nvs_set_blob(s_nvs, "cfg", &bad, sizeof(bad));
+nvs_commit(s_nvs);
+
         return true;
 
 }

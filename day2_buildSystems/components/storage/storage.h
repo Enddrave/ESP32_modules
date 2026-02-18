@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define CONFIG_VERSION 1
+#define CONFIG_VERSION 2
 
 typedef struct {
     uint32_t version;

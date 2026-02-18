@@ -20,8 +20,12 @@ Build proof	              |     binary hash check
 static const char *TAG = "main";
 
 device_config_t g_cfg;
-
-
+#ifdef APP_DEBUG_BUILD
+   // ESP_LOGI(TAG, "DEBUG BUILD");
+#endif
+#ifdef APP_RELEASE_BUILD
+    //ESP_LOGW(TAG, "RELEASE BUILD");
+#endif
 void app_main(void)
 {
     storage_init();
@@ -31,6 +35,8 @@ void app_main(void)
     storage_save(&g_cfg);
 
     ESP_LOGI(TAG, "Name: %s", g_cfg.name);
-    ESP_LOGI(TAG, "Mode: %ld", g_cfg.mode);
-    ESP_LOGI(TAG, "Boot count: %ld", g_cfg.boot_count);
+    ESP_LOGE(TAG, "Version: %lu", g_cfg.version);
+    ESP_LOGW(TAG, "Mode: %ld", g_cfg.mode);
+    ESP_LOGE(TAG, "Boot count: %ld", g_cfg.boot_count);
+    ESP_LOGI(TAG, "CRC: %lu", g_cfg.crc);
 }

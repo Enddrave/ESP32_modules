@@ -1,0 +1,56 @@
+# ==== ESP-IDF build artifacts ====
+
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.*.old
+
+# keep only defaults
+
+!sdkconfig.defaults
+!sdkconfig.debug
+!sdkconfig.release
+
+# ==== CMake ====
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# ==== VSCode / IDE ====
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==== Python ====
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# ==== MacOS ====
+
+.DS_Store
+
+# ==== Logs ====
+
+*.log
+
+# ==== Binary outputs ====
+
+*.bin
+*.elf
+*.map
+*.hex
+
+# ==== Temporary files ====
+
+*.tmp
+*.bak
+*~
+

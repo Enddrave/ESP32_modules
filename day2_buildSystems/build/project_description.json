@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "day2_buildSystems",
-    "project_version":    "50e390d-dirty",
+    "project_version":    "2d73897-dirty",
     "project_path":       "/Users/bhupendra/ESP32_Project_Git/day2_buildSystems",
     "idf_path":           "/Users/bhupendra/esp/esp-idf",
     "build_dir":          "/Users/bhupendra/ESP32_Project_Git/day2_buildSystems/build",
