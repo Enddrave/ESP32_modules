@@ -1,0 +1,105 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/build/bootloader/esp-idf/esptool_py && /Users/bhupendra/.espressif/python_env/idf5.2_py3.11_env/bin/python /Users/bhupendra/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/build/bootloader/bootloader.bin
+Bootloader binary size 0x5490 bytes. 0x2b70 bytes (34%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/storage/CMakeFiles/__idf_storage.dir/storage.c.obj
+FAILED: [code=1] esp-idf/storage/CMakeFiles/__idf_storage.dir/storage.c.obj 
+/Users/bhupendra/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2.6\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/build/config -I/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/include -I/Users/bhupendra/esp/esp-idf/components/newlib/platform_include -I/Users/bhupendra/esp/esp-idf/components/freertos/config/include -I/Users/bhupendra/esp/esp-idf/components/freertos/config/include/freertos -I/Users/bhupendra/esp/esp-idf/components/freertos/config/xtensa/include -I/Users/bhupendra/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/bhupendra/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/bhupendra/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/bhupendra/esp/esp-idf/components/freertos/esp_additions/include -I/Users/bhupendra/esp/esp-idf/components/esp_hw_support/include -I/Users/bhupendra/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/bhupendra/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/bhupendra/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/bhupendra/esp/esp-idf/components/heap/include -I/Users/bhupendra/esp/esp-idf/components/log/include -I/Users/bhupendra/esp/esp-idf/components/soc/include -I/Users/bhupendra/esp/esp-idf/components/soc/esp32s3 -I/Users/bhupendra/esp/esp-idf/components/soc/esp32s3/include -I/Users/bhupendra/esp/esp-idf/components/hal/platform_port/include -I/Users/bhupendra/esp/esp-idf/components/hal/esp32s3/include -I/Users/bhupendra/esp/esp-idf/components/hal/include -I/Users/bhupendra/esp/esp-idf/components/esp_rom/include -I/Users/bhupendra/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/bhupendra/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/bhupendra/esp/esp-idf/components/esp_common/include -I/Users/bhupendra/esp/esp-idf/components/esp_system/include -I/Users/bhupendra/esp/esp-idf/components/esp_system/port/soc -I/Users/bhupendra/esp/esp-idf/components/esp_system/port/include/private -I/Users/bhupendra/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/bhupendra/esp/esp-idf/components/xtensa/include -I/Users/bhupendra/esp/esp-idf/components/xtensa/deprecated_include -I/Users/bhupendra/esp/esp-idf/components/lwip/include -I/Users/bhupendra/esp/esp-idf/components/lwip/include/apps -I/Users/bhupendra/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/bhupendra/esp/esp-idf/components/lwip/lwip/src/include -I/Users/bhupendra/esp/esp-idf/components/lwip/port/include -I/Users/bhupendra/esp/esp-idf/components/lwip/port/freertos/include -I/Users/bhupendra/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/bhupendra/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/bhupendra/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/common/include -I/Users/bhupendra/esp/esp-idf/components/nvs_flash/include -I/Users/bhupendra/esp/esp-idf/components/spi_flash/include -I/Users/bhupendra/esp/esp-idf/components/esp_partition/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine=. -fmacro-prefix-map=/Users/bhupendra/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/storage/CMakeFiles/__idf_storage.dir/storage.c.obj -MF esp-idf/storage/CMakeFiles/__idf_storage.dir/storage.c.obj.d -o esp-idf/storage/CMakeFiles/__idf_storage.dir/storage.c.obj -c /Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c
+In file included from /Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:2:
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c: In function 'storage_load_state':
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:294:27: note: in expansion of macro 'LOG_COLOR'
+  294 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_E'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:436:86: note: in expansion of macro 'LOG_FORMAT'
+  436 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:13: note: in expansion of macro 'ESP_LOGI'
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      |             ^~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:295:27: note: in expansion of macro 'LOG_COLOR'
+  295 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_W'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:437:86: note: in expansion of macro 'LOG_FORMAT'
+  437 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:13: note: in expansion of macro 'ESP_LOGI'
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      |             ^~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      | ^          
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:13: note: in expansion of macro 'ESP_LOGI'
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      |             ^~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:1: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      | ^          
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:308:59: note: in definition of macro 'LOG_FORMAT'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:13: note: in expansion of macro 'ESP_LOGI'
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      |             ^~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:291:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  291 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:296:27: note: in expansion of macro 'LOG_COLOR'
+  296 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:308:37: note: in expansion of macro 'LOG_COLOR_I'
+  308 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:440:86: note: in expansion of macro 'LOG_FORMAT'
+  440 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:464:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  464 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/bhupendra/esp/esp-idf/components/log/include/esp_log.h:368:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  368 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/bhupendra/ESP32_Project_Git/day4_state_mcahine/components/storage/storage.c:32:13: note: in expansion of macro 'ESP_LOGI'
+   32 |             ESP_LOGI(TAG, "Loaded state: %d", value);
+      |             ^~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
