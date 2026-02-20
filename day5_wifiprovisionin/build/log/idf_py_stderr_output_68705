@@ -1,0 +1,18 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/cu.usbserial-A5069RR4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40049089: [0;33musb_uart_device_tx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m--- 0x40048836: [0;33muart_tx_one_char_uart[0m[0m in [0;32mROM[0m
+[0m--- 0x40049b21: [0;33mSPI_WakeUp[0m[0m in [0;32mROM[0m
+[0m

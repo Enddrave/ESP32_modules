@@ -1,0 +1,4 @@
+[0;33m--- esp-idf-monitor 1.8.0 on /dev/cu.usbserial-A5069RR4 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403759f8: [0;33mesp_restart_noos[0m[0m at [0;32m/Users/bhupendra/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m161[0m
+[0m
