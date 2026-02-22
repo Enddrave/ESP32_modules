@@ -1,0 +1,2 @@
+source /Users/bhupendra/ESP32_Project_Git/esp32_cam_node/build/bootloader/gdbinit/symbols
+source /Users/bhupendra/ESP32_Project_Git/esp32_cam_node/build/bootloader/gdbinit/connect
