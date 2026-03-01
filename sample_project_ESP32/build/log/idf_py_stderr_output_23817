@@ -1,0 +1,9 @@
+CMake Error at /Users/bhupendra/esp/esp-idf/tools/cmake/build.cmake:288 (message):
+  Failed to resolve component 'common'.
+Call Stack (most recent call first):
+  /Users/bhupendra/esp/esp-idf/tools/cmake/build.cmake:324 (__build_resolve_and_add_req)
+  /Users/bhupendra/esp/esp-idf/tools/cmake/build.cmake:627 (__build_expand_requirements)
+  /Users/bhupendra/esp/esp-idf/tools/cmake/project.cmake:612 (idf_build_process)
+  CMakeLists.txt:4 (project)
+
+

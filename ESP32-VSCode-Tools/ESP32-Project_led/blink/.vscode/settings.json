@@ -1,0 +1,17 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/Users/bhupendra/esp/v5.5.1/esp-idf",
+  "idf.toolsPath": "/Users/bhupendra/.espressif",
+  "idf.pythonInstallPath": "/opt/homebrew/bin/python3",
+  "idf.port": "/dev/tty.usbserial-0001",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+  "clangd.path": "/Users/bhupendra/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=/Users/bhupendra/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+    "--compile-commands-dir=/Users/bhupendra/Desktop/Enddrave/ESP32-VSCode-Tools/ESP32-Project_led/blink/build"
+  ],
+  "idf.flashType": "UART"
+}

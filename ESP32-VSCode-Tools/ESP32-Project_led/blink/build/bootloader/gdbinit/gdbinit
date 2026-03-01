@@ -1,0 +1,2 @@
+source /Users/bhupendra/Desktop/Enddrave/ESP32-VSCode-Tools/ESP32-Project_led/blink/build/bootloader/gdbinit/symbols
+source /Users/bhupendra/Desktop/Enddrave/ESP32-VSCode-Tools/ESP32-Project_led/blink/build/bootloader/gdbinit/connect
